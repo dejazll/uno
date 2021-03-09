@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>punto 1</title>
+
+<script type="text/javascript">
+	i=10;
+</script>
+
+</head>
+<body onload="fun1()" background="ji.jpg" style="background-size: cover;">
+
+<h1><center>
+	<div id="a1" class="uno" style="position: absolute; left: 450px; top: 100px; background-color: lightsalmon; border: double black 5px; font size: 50px; ">
+		<h1><center>HOLA K MAS??</center></h1>
+
+</center></h1>
+	</div>
+
+
+
+	<script type="text/javascript">
+		
+		function fun1()
+		{
+
+        	setTimeout(fun2,5000);
+
+		}
+
+		function fun2()
+		{
+		 x=setInterval(fun3,1000);
+
+			
+}
+function fun3()
+{
+
+
+document.getElementById('a1').innerHTML=i;
+if (i==0) {
+	console.log('termine');
+	clearInterval(x);
+	document.getElementById('a1').innerHTML="Termine";
+
+}
+i=i-1;
+
+}
+
+
+
+
+
+	</script>
+
+</body>
+</html>
